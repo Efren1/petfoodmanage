@@ -158,7 +158,7 @@ myApp.onPageInit('detalle_mascota', function(page){
          '<li><a href="#" onclick="comida_ya(' + id + ')"><img src="images/icons/blue/dog-food.png"/><span>DAR DE COMER</span></a></li>' +
          '<li><a href="modificar_mascota.html?id=' + id + '"><img src="images/icons/blue/modification.png"/><span>MODIFICAR MASCOTA</span></a></li>' +
          '<li><a href="#"><img src="images/icons/blue/blog.png"/><span>HORARIOS PROGRAMADOS</span></a></li>' +
-         '<li><a href="#" onclick="eliminar_mascota(' + id + ')" class="external"><img src="images/icons/blue/delete.png"/><span>ELIMINAR MASCOTA</span></a></li>';
+         '<li><a href="#" onclick="eliminar_mascota(' + id + ')" ><img src="images/icons/blue/delete.png"/><span>ELIMINAR MASCOTA</span></a></li>';
   $$('#detalle-mascota').html(html);
 })
 
@@ -187,7 +187,7 @@ function dispensar(id){
       return response.json();
     }).then(function(data) {
       console.log(data);
-      alert(data.mensaje);
+      myApp.alert(data.mensaje);
       $$('#dispensar').prop('checked', false);
       hiddenPreload();
     }).catch(function(error){
@@ -197,36 +197,34 @@ function dispensar(id){
   }
 }
 
-function eliminar_mascota_confirm(id){
-	showPreload();
-  fetch(apiUrl+'/mascota/v01/delete/' + id, {
-    method:'POST',
-    body:JSON.stringify({
-      
-    }),
-    headers:{
-      'Accept': 'application/json, text/plain',
-      'Content-Type':'application/json',
-      'access-token' : token
-    }
-  }).then(function(response) {
-    return response.json();
-  }).then(function(data) {
-    console.log(data);
-    hiddenPreload();
-  }).catch(function(error){
-    myApp.alert('Ha ocurrido un error, por favor inténtalo de nuevo!!!');
-    hiddenPreload();
-  });
-}
+
 function eliminar_mascota(id){
 	/**
 	*Confirmación de eliminación
 	*/
-	  myApp.alert('<br><div>¿Está seguro que desea eliminar la mascota?</div><br>' +
-              '  <input type="button" value="Si" onclick="eliminar_mascota_confirm(' + id + ')">' +
-              '  <input type="button" value="No" >'
-			  );
+	  myApp.confirm('<br><div>¿Está seguro que desea eliminar la mascota?</div><br>','Eliminar Mascota',function(){
+		  showPreload();
+		  fetch(apiUrl+'/mascota/v01/delete/' + id, {
+			method:'POST',
+			body:JSON.stringify({
+			  
+			}),
+			headers:{
+			  'Accept': 'application/json, text/plain',
+			  'Content-Type':'application/json',
+			  'access-token' : token
+			}
+		  }).then(function(response) {
+			  return response.json();
+		  }).then(function(data) {
+			console.log(data);
+			hiddenPreload();
+			mainView.loadPage({url: 'mascotas.html', ignoreCache:false, reload:false });
+		  }).catch(function(error){
+			myApp.alert('Ha ocurrido un error, por favor inténtalo de nuevo!!!');
+			hiddenPreload();
+		  });
+	  });
   
 }
 
