@@ -5,6 +5,11 @@ var myApp = new Framework7({
   precompileTemplates: true,
   swipeBackPage: false,
   pushState: true,
+  smartSelect: {
+    pageTitle: 'Seleccione una opción',
+    openIn: 'popup',
+	sheetCloseLinkText: 'Terminar'
+  },
   template7Pages: true
 });
 
