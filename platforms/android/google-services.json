@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "311348846305",
+    "firebase_url": "https://petfood-2847e.firebaseio.com",
+    "project_id": "petfood-2847e",
+    "storage_bucket": "petfood-2847e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311348846305:android:dc86321614edc3d3",
+        "android_client_info": {
+          "package_name": "com.petFood.jdro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311348846305-ufh7k6vohllfm338qmhhia7pf3h79ca3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8q64jmaWmlBFmMhPFwEXGK-saltBeHJA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

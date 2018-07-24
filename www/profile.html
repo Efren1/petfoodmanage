@@ -1,0 +1,81 @@
+<!-- We dont need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link">
+                <i class="icon icon-back"></i>
+                <span>Volver</span>
+            </a>
+        </div>
+        <div class="center sliding">Perfil</div>
+        <!-- <div class="right">
+            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+        </div> -->
+    </div>
+</div>
+<div class="pages">
+    <div data-page="profile" class="page">
+        <div class="page-content" style="background-color: #ececec;">
+          <div class="user_login_info">
+            <div class="user_thumb">
+              <img src="images/profile.jpg" alt="" title="" />
+              <div class="user_details">
+                <p style="color: white;">Hola, <span id="name-profile">.</span></p>
+              </div>  
+              <div class="user_avatar"><img src="images/avatar.jpg" id="photo_profile" class="profile-avatar" /></div>       
+            </div>
+              <nav class="user-nav">
+                <ul>
+                  <li>
+                    <a href="#" data-popup = ".datos-usuario" class = "open-popup" >
+                      <img src="images/icons/blue/users.png" alt="" title="" /><span>ACTUALIZAR DATOS</span>
+                    </a>
+                  </li>
+              </ul>
+              </nav>
+          </div>
+
+          <div class = "popup datos-usuario"><br><br><br>
+            <p style="text-align: right;"><a href = "#" class = "close-popup"><img src="images/icons/white/menu_close.png" alt="" title="" style="width: 7%; height: 100%;" /></a></p>
+            <p>Actualizar Datos</p>
+            <div style="padding: 20px;">
+              <div class="contactform">
+                <form name="formulario_profileUpdate" id="form_profileUpdate">
+                  <div class="form_row">
+                    <div class="form_row_icon"><img src="images/icons/blue/user.png" alt="" title="" /></div>
+                    <input type="text" id="input-nombre-profile" class="form_input" placeholder="Nombre(s)" />
+                  </div>
+                  <div class="form_row">
+                    <div class="form_row_icon"><img src="images/icons/blue/user.png" alt="" title="" /></div>
+                    <input type="text" id="input-apellidos-profile" class="form_input" placeholder="Apellidos" />
+                  </div>
+                  <div class="form_row">
+                    <div class="form_row_icon"><img src="images/icons/blue/contact.png" alt="" title="" /></div>
+                    <input type="text" id="input-email-profile" class="form_input" placeholder="Email" />
+                  </div>
+                  <div class="form_row">
+                    <div class="form_row_icon"><img src="images/icons/blue/phone.png" alt="" title="" /></div>
+                    <input type="text" id="input-phone" class="form_input" placeholder="Telefono" />
+                  </div>
+                  <div class="form_row">
+                    <div class="form_row_icon"><img src="images/icons/blue/tabs.png" alt="" title="" /></div>
+                    <input type="text" id="input-address" class="form_input" placeholder="Dirección" />
+                  </div>
+                  <div class="form_row">
+                    <div class="form_row_icon"><img src="images/icons/blue/lock.png" alt="" title="" /></div>
+                    <input type="text" id="input-pass-profile" class="form_input" placeholder="Contraseña" />
+                  </div>
+                  <div class="form_row">
+                    <div class="form_row_icon"><img src="images/icons/blue/lock.png" alt="" title="" /></div>
+                    <input type="text" id="input-Confpass-profile" class="form_input" placeholder="Confirmar Contraseña" />
+                  </div>
+                  <input type="submit" name="submit" class="form_submit" id="submit" value="Actualizar" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

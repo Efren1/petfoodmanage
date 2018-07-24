@@ -1,0 +1,60 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="index.html" class="back link">
+                <i class="icon icon-back"></i>
+                <span>Atras</span>
+            </a>
+        </div>
+        <div class="center sliding">Modificar Mascota</div>
+        <!-- <div class="right">
+            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+        </div> -->
+    </div>
+</div>
+<div class="pages">
+  <div data-page="modificar_mascota" class="page">
+    <div id="pages_maincontent">
+      <h2 class="page_title">Modificar</h2> 
+            <div class="user_avatar" style="position: initial; float: right;"><img src="images/avatar.jpg" id="foto_registerPet" class="profile-avatar" /></div>     
+      <div class="page_content"> 
+        <div class="contactform">
+
+          <form id="form-mascotaUpdate">
+            <var id="photo-mascotaUpdate" hidden></var>
+            <var id="id-mascotaUpdate" hidden></var>
+            <div class="form_row">
+              <div class="form_row_icon"><img src="images/icons/blue/pet.png" /></div>
+              <input type="text" id="input-nombreMascotaUpdate" class="form_input" placeholder="Nombre(s)" />
+            </div>
+            <div class="form_row">
+              <div class="form_row_icon"><img src="images/icons/blue/blog.png" /></div>
+              <input type="text" id="input-edadMascotaUpdate" class="form_input" placeholder="Edad" />
+            </div>
+            <div class="form_row">
+              <div class="form_row_icon"><img src="images/icons/blue/cat.png" /></div>
+              <input type="text" id="input-tipoMascotaUpdate" class="form_input" placeholder="Tipo" />
+            </div>
+            <div class="form_row">
+              <div class="form_row_icon"><img src="images/icons/blue/pet..png" /></div>
+              <input type="text" id="input-razaMascotaUpdate" class="form_input" placeholder="Raza" />
+            </div>
+            <div class="form_row">
+              <div class="form_row_icon"><img src="images/icons/blue/file.png" /></div>
+              <input type="text" id="input-descripcionMascotaUpdate" class="form_input" placeholder="Descripción" />
+            </div>
+            <div class="form_row" style="width: 90%;">
+              <div class="form_row_icon"><img src="images/icons/blue/dispenser.png" /></div>
+              <input type="text" id="input-dispensadorMascotaUpdate" class="form_input" placeholder="Id Dispensador" />
+              <button onclick="qrModify()" class="form_row" style="width: 10%; height: 5%; position: absolute; background-color: black; border: none;"><img src="images/icons/blue/photos.png" style="width: 85%; padding: 3px;" /></button>
+            </div>
+            <input type="submit" name="submit" class="form_submit" id="submit" value="Modificar" />
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>

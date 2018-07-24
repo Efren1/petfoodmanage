@@ -1,0 +1,226 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="index.html" class="back link">
+                <i class="icon icon-back"></i>
+                <span>Atras</span>
+            </a>
+        </div>
+        <div class="center sliding">Programar Comida</div>
+    </div>
+</div>
+<div class="pages">
+  <div data-page="programar_comida" class="page">
+    <div id="pages_maincontent">
+      <h2 class="page_title" >Programar Dias de Alimentación</h2>    
+    <div class="page_content"> 
+      <div class="content-block accordion-list custom-accordion">
+                        <div class="accordion-item">
+                           <div class="accordion-item-toggle"><i class="icon icon-plus">+</i><i class="icon icon-minus">-</i><span>Lunes</span></div>
+                           <div class="accordion-item-content">
+                              <div style = "padding:0; margin-right:-15px; width:auto" class = "content-block-inner">
+                                   <div style = "margin:0" class = "list-block">
+                                      <ul style = "border-top:none">
+                                         <li>
+                                            <div class = "item-content">
+                                               <div class = "item-inner">
+                                                  <div class = "item-input">
+                                                     <input type = "text" placeholder = "Date Time" 
+                                                        readonly id = "picker-dateL" />
+                                                  </div>
+                                               </div>
+                                               <a href="#" onclick="datos_alimento('L');">AGREGAR</a>
+                                            </div>
+                                         </li>
+                                      </ul>
+                                   </div>
+                                   <div id = "picker-date-containerL"></div>
+                                </div>
+                                <div style="max-height: 150px; overflow-y: auto;">
+                                  <div class="content-block" id="Ldatos_alimento">
+                                    
+                                  </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="accordion-item">
+                           <div class="accordion-item-toggle"><i class="icon icon-plus">+</i><i class="icon icon-minus">-</i><span>Martes</span></div>
+                           <div class="accordion-item-content">
+                              <div style = "padding:0; margin-right:-15px; width:auto" class = "content-block-inner">
+                                   <div style = "margin:0" class = "list-block">
+                                      <ul style = "border-top:none">
+                                         <li>
+                                            <div class = "item-content">
+                                               <div class = "item-inner">
+                                                  <div class = "item-input">
+                                                     <input type = "text" placeholder = "Date Time" 
+                                                        readonly id = "picker-dateM" />
+                                                  </div>
+                                               </div>
+                                               <a href="#" onclick="datos_alimento('M');">AGREGAR</a>
+                                            </div>
+                                         </li>
+                                      </ul>
+                                   </div>
+                                   <div id = "picker-date-containerM"></div>
+                                </div>
+                                <div style="max-height: 150px; overflow-y: auto;">
+                                  <div class="content-block" id="Mdatos_alimento">
+                                    
+                                  </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="accordion-item">
+                           <div class="accordion-item-toggle"><i class="icon icon-plus">+</i><i class="icon icon-minus">-</i><span>Miercoles</span></div>
+                           <div class="accordion-item-content">
+                              <div style = "padding:0; margin-right:-15px; width:auto" class = "content-block-inner">
+                                   <div style = "margin:0" class = "list-block">
+                                      <ul style = "border-top:none">
+                                         <li>
+                                            <div class = "item-content">
+                                               <div class = "item-inner">
+                                                  <div class = "item-input">
+                                                     <input type = "text" placeholder = "Date Time" 
+                                                        readonly id = "picker-dateW" />
+                                                  </div>
+                                               </div>
+                                               <a href="#" onclick="datos_alimento('W');">AGREGAR</a>
+                                            </div>
+                                         </li>
+                                      </ul>
+                                   </div>
+                                   <div id = "picker-date-containerW"></div>
+                                </div>
+                                <div style="max-height: 150px; overflow-y: auto;">
+                                  <div class="content-block" id="Wdatos_alimento">
+                                    
+                                  </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="accordion-item">
+                           <div class="accordion-item-toggle"><i class="icon icon-plus">+</i><i class="icon icon-minus">-</i><span>Jueves</span></div>
+                           <div class="accordion-item-content">
+                              <div style = "padding:0; margin-right:-15px; width:auto" class = "content-block-inner">
+                                   <div style = "margin:0" class = "list-block">
+                                      <ul style = "border-top:none">
+                                         <li>
+                                            <div class = "item-content">
+                                               <div class = "item-inner">
+                                                  <div class = "item-input">
+                                                     <input type = "text" placeholder = "Date Time" 
+                                                        readonly id = "picker-dateJ" />
+                                                  </div>
+                                               </div>
+                                               <a href="#" onclick="datos_alimento('J');">AGREGAR</a>
+                                            </div>
+                                         </li>
+                                      </ul>
+                                   </div>
+                                   <div id = "picker-date-containerJ"></div>
+                                </div>
+                                <div style="max-height: 150px; overflow-y: auto;">
+                                  <div class="content-block" id="Jdatos_alimento">
+                                    
+                                  </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="accordion-item">
+                           <div class="accordion-item-toggle"><i class="icon icon-plus">+</i><i class="icon icon-minus">-</i><span>Viernes</span></div>
+                           <div class="accordion-item-content">
+                              <div style = "padding:0; margin-right:-15px; width:auto" class = "content-block-inner">
+                                   <div style = "margin:0" class = "list-block">
+                                      <ul style = "border-top:none">
+                                         <li>
+                                            <div class = "item-content">
+                                               <div class = "item-inner">
+                                                  <div class = "item-input">
+                                                     <input type = "text" placeholder = "Date Time" 
+                                                        readonly id = "picker-dateV" />
+                                                  </div>
+                                               </div>
+                                               <a href="#" onclick="datos_alimento('V');">AGREGAR</a>
+                                            </div>
+                                         </li>
+                                      </ul>
+                                   </div>
+                                   <div id = "picker-date-containerV"></div>
+                                </div>
+                                <div style="max-height: 150px; overflow-y: auto;">
+                                  <div class="content-block" id="Vdatos_alimento">
+                                    
+                                  </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="accordion-item">
+                           <div class="accordion-item-toggle"><i class="icon icon-plus">+</i><i class="icon icon-minus">-</i><span>Sabado</span></div>
+                           <div class="accordion-item-content">
+                              <div style = "padding:0; margin-right:-15px; width:auto" class = "content-block-inner">
+                                   <div style = "margin:0" class = "list-block">
+                                      <ul style = "border-top:none">
+                                         <li>
+                                            <div class = "item-content">
+                                               <div class = "item-inner">
+                                                  <div class = "item-input">
+                                                     <input type = "text" placeholder = "Date Time" 
+                                                        readonly id = "picker-dateS" />
+                                                  </div>
+                                               </div>
+                                               <a href="#" onclick="datos_alimento('S');">AGREGAR</a>
+                                            </div>
+                                         </li>
+                                      </ul>
+                                   </div>
+                                   <div id = "picker-date-containerS"></div>
+                                </div>
+                                <div style="max-height: 150px; overflow-y: auto;">
+                                  <div class="content-block" id="Sdatos_alimento">
+                                    
+                                  </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="accordion-item">
+                           <div class="accordion-item-toggle"><i class="icon icon-plus">+</i><i class="icon icon-minus">-</i><span>Domingo</span></div>
+                           <div class="accordion-item-content">
+                                <div style = "padding:0; margin-right:-15px; width:auto" class = "content-block-inner">
+                                   <div style = "margin:0" class = "list-block">
+                                      <ul style = "border-top:none">
+                                         <li>
+                                            <div class = "item-content">
+                                               <div class = "item-inner">
+                                                  <div class = "item-input">
+                                                     <input type = "text" placeholder = "Date Time" 
+                                                        readonly id = "picker-dateD" />
+                                                  </div>
+                                               </div>
+                                               <a href="#" onclick="datos_alimento('D');">AGREGAR</a>
+                                            </div>
+                                         </li>
+                                      </ul>
+                                   </div>
+                                   <div id = "picker-date-containerD"></div>
+                                </div>
+                                <div style="max-height: 150px; overflow-y: auto;">
+                                  <div class="content-block" id="Ddatos_alimento">
+                                    
+                                  </div>
+                                </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="contactform">
+                      <input type="button" onclick="datos_prog_comida();" class="form_submit" value="Registrar" />
+                     <!-- <button class="form_submit" >Datos</button> -->
+                     </div>
+    </div>
+  </div>
+  </div>
+</div> 
+ 

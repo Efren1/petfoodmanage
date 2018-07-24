@@ -1,0 +1,23 @@
+{
+  "name": "com.gmcalimentos.dmoas",
+  "version": "1.0.0",
+  "displayName": "GmcApp",
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-camera": {},
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-fcm": {}
+    }
+  },
+  "dependencies": {
+    "cordova-android": "~6.3.0",
+    "cordova-plugin-camera": "^4.0.3",
+    "cordova-plugin-dialogs": "^2.0.1",
+    "cordova-plugin-fcm": "^2.1.2",
+    "cordova-plugin-geolocation": "^4.0.1"
+  }
+}
