@@ -1792,7 +1792,7 @@ border-bottom:1px solid #d6d6d6;
 color:#505050;
 }
 .navbar, .toolbar, .subnavbar {
-    background: #2d2e3e;
+    background: #fcab26;
 }
 .picker-modal.smart-select-picker .toolbar::after {
     content: '';

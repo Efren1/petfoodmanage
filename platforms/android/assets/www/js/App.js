@@ -133,13 +133,14 @@ myApp.onPageInit('mascotas', function (page) {
       }else{
         imagen = item.imagen;
       }
-			html +=	'<li>' +
+			html +=	'<li> <a  href="detalles_mascotas.html?id=' + item.id + '">' +
               '  <div class="feat_small_icon"><img src="data:image/jpeg;base64,' + imagen + '" width = "80" /></div>' +
               '  <div class="feat_small_details">' +
-              '    <h4><a href="#">' + item.nombre + '</a></h4>' +
-              '    <a href="#">' + item.raza + '<br>' + item.descripcion + '</a>' +
+              '    <h4>' + item.nombre + '</h4>' +
+              '    ' + item.raza + '<br>' + item.descripcion + '' +
               '  </div>' +
               // '  <span class="plus_icon" style="right: 8%;"><a href="modificar_mascota.html?id=' + item.id + '"><img src="images/icons/blue/Pencil1.png" alt="" title="" /></a></span>' +
+			  '  </a> '+
               '  <span class="plus_icon"><a href="detalles_mascotas.html?id=' + item.id + '"><img src="images/icons/blue/plus.png" alt="" title="" /></a></span>' +
               '</li>';
 		});
@@ -962,18 +963,44 @@ function delete_horas(id){
 
 function datos_prog_comida(){
   json = [];
+  var j = {};
+  var dia = '';
   var data = $('.data');
+  var hora = {};
+  var i = 0;
   console.log(data);
   $('.data').each(function(index, item) {
     if (typeof item.dataset.id == "string") { 
       // console.log(item.dataset.id + " : " + item.textContent);
-      var hora = item.textContent;
-      hora = hora.split(" ").join("");
-      var j = {};
-      j[hora] = "R";
-      json.push({dia:item.dataset.id, hora: j });
+      var horaProg = item.textContent; 
+      horaProg = horaProg.split(" ").join("");
+	  if(dia == ''){
+		dia = item.dataset.id;   
+		hora[horaProg] = "R";
+	  }else{
+		if(dia == item.dataset.id){
+			hora[horaProg] = "R";
+		}else{
+			
+			json.push({dia:dia,hora:hora});
+			hora={};
+			hora[horaProg] = "R";
+			dia=item.dataset.id;
+		}  
+	  }
+	  
+      
+	  ;
     }
   });
+  
+  if(hora !== undefined){
+	json.push({dia:dia,hora:hora});	
+  }
+  
+  console.log("Información de objeto",json);
+  
+  
 
   showPreload();
   fetch(apiUrl+'/mascota/v01/' + idMascota + '/horario/alimento', {
