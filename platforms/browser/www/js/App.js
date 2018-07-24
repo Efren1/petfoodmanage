@@ -1,6 +1,6 @@
 // Initialize app
 var myApp = new Framework7({
-  modalTitle: 'PetFood',
+  modalTitle: 'Trofí',
   animateNavBackIcon: true,
   precompileTemplates: true,
   swipeBackPage: false,
@@ -14,7 +14,7 @@ var userData = [];
 
 // If we need to use custom DOM library, let's save it to $$ variable:
 var $$ = Dom7;
-var tituloalert='PetFood';
+var tituloalert='Trofí';
 var foto_profile;
 var foto_registerPet;
 var pictureSource;   // picture source
@@ -197,8 +197,8 @@ function dispensar(id){
   }
 }
 
-function eliminar_mascota(id){
-  showPreload();
+function eliminar_mascota_confirm(id){
+	showPreload();
   fetch(apiUrl+'/mascota/v01/delete/' + id, {
     method:'POST',
     body:JSON.stringify({
@@ -218,6 +218,16 @@ function eliminar_mascota(id){
     myApp.alert('Ha ocurrido un error, por favor inténtalo de nuevo!!!');
     hiddenPreload();
   });
+}
+function eliminar_mascota(id){
+	/**
+	*Confirmación de eliminación
+	*/
+	  myApp.alert('<br><div>¿Está seguro que desea eliminar la mascota?</div><br>' +
+              '  <input type="button" value="Si" onclick="eliminar_mascota_confirm(' + id + ')">' +
+              '  <input type="button" value="No" >'
+			  );
+  
 }
 
 myApp.onPageInit('modificar_mascota', function(page){
