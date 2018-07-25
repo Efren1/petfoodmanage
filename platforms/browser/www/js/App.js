@@ -12,6 +12,7 @@ var myApp = new Framework7({
   },
   template7Pages: true
 });
+// Here you can use all slider methods like:
 
 var apiUrl='http://31.220.49.239:8080/PetFoodNegocio-1.0/udistrital';
 var token = '';
@@ -673,6 +674,7 @@ var idMascota;
 var json = [];
 
 myApp.onPageInit('consultar_horario_programado',function(page){
+	
 	var id = page.query.id;
 	var datos_mascotas = JSON.parse(localStorage.getItem('mis-mascotas'));
 	var token = localStorage.getItem('access-token');
@@ -703,17 +705,31 @@ myApp.onPageInit('consultar_horario_programado',function(page){
 		  // console.log(item.hora);
 		  $$.each(item.hora, function(index, item) {
 			var id = dia + index;
-			$$('#' + dia + 'datos_alimento').append("<div class='row data' id='" + id + "' data-id='" + dia + "' style='border-bottom: 3px dotted dodgerblue; margin-bottom: 15px;'>" +
-											  " <div class='col-80 texto-pro-comida'>" + 
-												  index + 
-											  " </div>" +
-											  " <div style='text-align: -webkit-right;' onclick='delete_horas(" + '"' + id + '"' + ")' class='col-20'>" +
-											  "   <img src='../images/icons/red/delete.png'/>" +
-											  " </div>" +
-											  "</div>");
 		  }); 
 		});
+		
+		$$('#datos_alimento_horario').append("<div class=\"swiper-container mascota_horario_slide\">"+
+												"<div class=\"swiper-pagination login-pagination\"></div>" +
+												"<div class=\"swiper-wrapper\">" +
+													"<div class=\"swiper-slide\"><img src='../images/icons/red/delete.png'/></div>"+
+													"<div class=\"swiper-slide\"><img src='../images/icons/black/plus.png'/></div>"+
+													"<div class=\"swiper-slide\"><img src='../images/icons/blue/back.png'/></div>"+
+												"</div>"+
+											"</div>"+
+											"<div class=\"swiper-button-prev login-prev\"></div>" +
+											"<div class=\"swiper-button-next login-next\"></div>" );
 		hiddenPreload();
+		var mySwiper = myApp.swiper('.mascota_horario_slide', {
+		  pagination: '.login-pagination',
+		  paginationHide: false,
+		  paginationClickable: true,
+		  nextButton: '.login-next',
+		  prevButton: '.login-prev',
+		  speed: 2000,
+		  autoplay: {
+			delay: 2000,
+		  },
+		}); 
 	  }).catch(function(error){
 		// console.log(error);
 		myApp.alert('Ha ocurrido un error, por favor inténtalo de nuevo!!!');
