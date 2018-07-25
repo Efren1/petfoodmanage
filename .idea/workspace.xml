@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46f66f26-461a-494e-b26f-70f437e59f5a" name="Default" comment="" />
+    <list default="true" id="46f66f26-461a-494e-b26f-70f437e59f5a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/images/profile.jpg" afterPath="$PROJECT_DIR$/platforms/android/assets/www/images/profile.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/images/profile.jpg" afterPath="$PROJECT_DIR$/platforms/browser/www/images/profile.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/images/profile.jpg" afterPath="$PROJECT_DIR$/www/images/profile.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/css/blue.css" afterPath="$PROJECT_DIR$/platforms/android/assets/www/css/blue.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/css/style.css" afterPath="$PROJECT_DIR$/platforms/android/assets/www/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/App.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/modificar_mascota.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/modificar_mascota.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/css/blue.css" afterPath="$PROJECT_DIR$/platforms/browser/www/css/blue.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/css/style.css" afterPath="$PROJECT_DIR$/platforms/browser/www/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/App.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/modificar_mascota.html" afterPath="$PROJECT_DIR$/platforms/browser/www/modificar_mascota.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/blue.css" afterPath="$PROJECT_DIR$/www/css/blue.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/www/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/App.js" afterPath="$PROJECT_DIR$/www/js/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/modificar_mascota.html" afterPath="$PROJECT_DIR$/www/modificar_mascota.html" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,100 +32,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2380">
-              <caret line="140" column="54" lean-forward="false" selection-start-line="140" selection-start-column="50" selection-end-line="140" selection-end-column="54" />
-              <folding>
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="54" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="my-app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/my-app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="44" selection-end-column="1" />
-              <folding>
-                <element signature="e#1174#1552#0" expanded="false" />
-                <element signature="e#1600#1860#0" expanded="false" />
-                <element signature="e#3335#5705#0" expanded="false" />
-                <element signature="e#3342#3381#0" expanded="false" />
-                <element signature="e#3863#4032#0" expanded="false" />
-                <element signature="e#5750#7498#0" expanded="false" />
-                <element signature="e#7680#7930#0" expanded="false" />
-                <element signature="e#7986#9518#0" expanded="false" />
-                <element signature="n#!!block;n#logout#0" expanded="false" />
-                <element signature="n#!!block;n#getSolicitudes#0" expanded="false" />
-                <marker date="1530140756334" expanded="true" signature="6369:7066" ph="..." />
-                <marker date="1530140756334" expanded="true" signature="6411:6469" ph="..." />
-                <marker date="1530140756334" expanded="true" signature="6411:6695" ph="..." />
-                <marker date="1530140756334" expanded="true" signature="6411:6760" ph="..." />
-                <marker date="1530140756334" expanded="true" signature="6548:6581" ph="..." />
-                <marker date="1530140756334" expanded="true" signature="6548:6635" ph="..." />
-                <marker date="1530140756334" expanded="true" signature="6817:6871" ph="..." />
-                <marker date="1530140756334" expanded="true" signature="6817:7039" ph="..." />
-                <marker date="1530140756334" expanded="true" signature="6884:7008" ph="..." />
-                <marker date="1530140756334" expanded="true" signature="6932:7004" ph="..." />
-                <marker date="1530140756334" expanded="true" signature="7211:7435" ph="..." />
-                <marker date="1530140756334" expanded="true" signature="7244:7292" ph="..." />
-                <marker date="1530140756334" expanded="true" signature="7325:7413" ph="..." />
-                <marker date="1530140756334" expanded="true" signature="10789:11280" ph="..." />
-                <marker date="1530140756334" expanded="true" signature="10839:11255" ph="..." />
-                <marker date="1530140756334" expanded="true" signature="10901:11002" ph="..." />
-                <marker date="1530140756334" expanded="true" signature="11053:11224" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="taller.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/taller.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="63" column="80" lean-forward="false" selection-start-line="63" selection-start-column="80" selection-end-line="63" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="perfil.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/perfil.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="12" column="46" lean-forward="false" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -117,22 +42,32 @@
       <find>sca</find>
       <find>logi</find>
       <find>validar</find>
+      <find>GmcApp</find>
     </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/www/assets/css/main.css" />
         <option value="$PROJECT_DIR$/www/agenda.html" />
-        <option value="$PROJECT_DIR$/../../themeforest-4021469-metronic-responsive-admin-dashboard-template/metronic_v5.1/metronic_v5.1/default/dist/default/index.html" />
+        <option value="D:/themeforest-4021469-metronic-responsive-admin-dashboard-template/metronic_v5.1/metronic_v5.1/default/dist/default/index.html" />
         <option value="$PROJECT_DIR$/www/home.html" />
         <option value="$PROJECT_DIR$/www/taller.html" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/perfil.html" />
         <option value="$PROJECT_DIR$/www/js/my-app.js" />
+        <option value="$PROJECT_DIR$/config.xml" />
       </list>
     </option>
   </component>
@@ -148,8 +83,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -166,86 +101,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="GmcApp" />
+              <option name="myItemId" value="PetFood" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="GmcApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GmcApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GmcApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GmcApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GmcApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GmcApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GmcApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="platforms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GmcApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GmcApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="platforms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
+              <option name="myItemId" value="PetFood" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -271,70 +144,248 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <method />
-    </configuration>
-    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
       <envs />
-      <scope-kind value="ALL" />
+      <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
-      <config-file value="" />
-      <node-interpreter value="project" />
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method>
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532489019210" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+      </Profilers>
+      <method>
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532489019210" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="GmcApp" />
+      <envs />
       <method />
     </configuration>
-    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" value="" />
-      <option name="executablePath" />
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="filePath" />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory />
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui />
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
+      <properties />
+      <listeners />
       <method />
     </configuration>
   </component>
@@ -362,18 +413,25 @@
     <option name="totallyTimeSpent" value="25978000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1386" height="788" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24920969" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33044422" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24851632" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -399,521 +457,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2380">
           <caret line="140" column="54" lean-forward="false" selection-start-line="140" selection-start-column="50" selection-end-line="140" selection-end-column="54" />
-          <folding>
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="54" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/my-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2499">
-          <caret line="294" column="34" lean-forward="false" selection-start-line="294" selection-start-column="10" selection-end-line="294" selection-end-column="34" />
-          <folding>
-            <element signature="e#1174#1552#0" expanded="false" />
-            <element signature="e#1600#1860#0" expanded="false" />
-            <element signature="e#3335#5705#0" expanded="false" />
-            <element signature="e#3342#3381#0" expanded="false" />
-            <element signature="e#3863#4032#0" expanded="false" />
-            <element signature="e#5750#7498#0" expanded="false" />
-            <element signature="e#7680#7930#0" expanded="false" />
-            <element signature="e#7986#9518#0" expanded="false" />
-            <element signature="n#!!block;n#logout#0" expanded="false" />
-            <element signature="n#!!block;n#getSolicitudes#0" expanded="false" />
-            <marker date="1530140756334" expanded="true" signature="6369:7066" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6469" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6695" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6760" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6548:6581" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6548:6635" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6817:6871" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6817:7039" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6884:7008" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6932:7004" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7211:7435" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7244:7292" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7325:7413" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10789:11280" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10839:11255" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10901:11002" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="11053:11224" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/taller.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="80" lean-forward="false" selection-start-line="63" selection-start-column="80" selection-end-line="63" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/perfil.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="46" lean-forward="false" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2380">
-          <caret line="140" column="54" lean-forward="false" selection-start-line="140" selection-start-column="50" selection-end-line="140" selection-end-column="54" />
-          <folding>
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="54" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/taller.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="80" lean-forward="false" selection-start-line="63" selection-start-column="80" selection-end-line="63" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/perfil.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/my-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2499">
-          <caret line="294" column="34" lean-forward="false" selection-start-line="294" selection-start-column="10" selection-end-line="294" selection-end-column="34" />
-          <folding>
-            <element signature="e#1174#1552#0" expanded="false" />
-            <element signature="e#1600#1860#0" expanded="false" />
-            <element signature="e#3335#5705#0" expanded="false" />
-            <element signature="e#3342#3381#0" expanded="false" />
-            <element signature="e#3863#4032#0" expanded="false" />
-            <element signature="e#5750#7498#0" expanded="false" />
-            <element signature="e#7680#7930#0" expanded="false" />
-            <element signature="e#7986#9518#0" expanded="false" />
-            <element signature="n#!!block;n#logout#0" expanded="false" />
-            <element signature="n#!!block;n#getSolicitudes#0" expanded="false" />
-            <marker date="1530140756334" expanded="true" signature="6369:7066" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6469" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6695" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6760" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6548:6581" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6548:6635" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6817:6871" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6817:7039" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6884:7008" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6932:7004" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7211:7435" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7244:7292" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7325:7413" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10789:11280" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10839:11255" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10901:11002" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="11053:11224" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2380">
-          <caret line="140" column="54" lean-forward="false" selection-start-line="140" selection-start-column="50" selection-end-line="140" selection-end-column="54" />
-          <folding>
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="54" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/taller.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="80" lean-forward="false" selection-start-line="63" selection-start-column="80" selection-end-line="63" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/perfil.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/my-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2584">
-          <caret line="299" column="124" lean-forward="false" selection-start-line="299" selection-start-column="124" selection-end-line="299" selection-end-column="124" />
-          <folding>
-            <element signature="e#1174#1552#0" expanded="false" />
-            <element signature="e#1600#1860#0" expanded="false" />
-            <element signature="e#3335#5705#0" expanded="false" />
-            <element signature="e#3342#3381#0" expanded="false" />
-            <element signature="e#3863#4032#0" expanded="false" />
-            <element signature="e#5750#7498#0" expanded="false" />
-            <element signature="e#7680#7930#0" expanded="false" />
-            <element signature="e#7986#9518#0" expanded="false" />
-            <element signature="n#!!block;n#logout#0" expanded="false" />
-            <element signature="n#!!block;n#getSolicitudes#0" expanded="false" />
-            <marker date="1530140756334" expanded="true" signature="6369:7066" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6469" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6695" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6760" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6548:6581" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6548:6635" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6817:6871" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6817:7039" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6884:7008" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6932:7004" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7211:7435" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7244:7292" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7325:7413" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10789:11280" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10839:11255" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10901:11002" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="11053:11224" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="89344" lean-forward="false" selection-start-line="4" selection-start-column="89344" selection-end-line="4" selection-end-column="89344" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/my-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2516">
-          <caret line="240" column="5" lean-forward="false" selection-start-line="240" selection-start-column="5" selection-end-line="240" selection-end-column="16" />
-          <folding>
-            <element signature="e#1174#1552#0" expanded="false" />
-            <element signature="e#1600#1860#0" expanded="false" />
-            <element signature="e#3335#5705#0" expanded="false" />
-            <element signature="e#3342#3381#0" expanded="false" />
-            <element signature="e#3863#4032#0" expanded="false" />
-            <element signature="e#5750#7498#0" expanded="false" />
-            <element signature="e#7680#7930#0" expanded="false" />
-            <element signature="e#7986#9518#0" expanded="false" />
-            <element signature="n#!!block;n#logout#0" expanded="false" />
-            <element signature="n#!!block;n#getSolicitudes#0" expanded="false" />
-            <marker date="1530140756334" expanded="true" signature="6369:7066" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6469" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6695" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6760" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6548:6581" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6548:6635" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6817:6871" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6817:7039" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6884:7008" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6932:7004" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7211:7435" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7244:7292" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7325:7413" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10789:11280" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10839:11255" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10901:11002" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="11053:11224" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/agenda.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="90" lean-forward="false" selection-start-line="54" selection-start-column="90" selection-end-line="54" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/taller.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" column="61" lean-forward="false" selection-start-line="69" selection-start-column="51" selection-end-line="77" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="89344" lean-forward="false" selection-start-line="4" selection-start-column="89344" selection-end-line="4" selection-end-column="89344" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/my-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2516">
-          <caret line="240" column="5" lean-forward="true" selection-start-line="240" selection-start-column="5" selection-end-line="240" selection-end-column="16" />
-          <folding>
-            <element signature="e#1174#1552#0" expanded="false" />
-            <element signature="e#1600#1860#0" expanded="false" />
-            <element signature="e#3335#5705#0" expanded="false" />
-            <element signature="e#3342#3381#0" expanded="false" />
-            <element signature="e#3863#4032#0" expanded="false" />
-            <element signature="e#5750#7498#0" expanded="false" />
-            <element signature="e#7680#7930#0" expanded="false" />
-            <element signature="e#7986#9518#0" expanded="false" />
-            <element signature="n#!!block;n#logout#0" expanded="false" />
-            <element signature="n#!!block;n#getSolicitudes#0" expanded="false" />
-            <marker date="1530140756334" expanded="true" signature="6369:7066" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6469" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6695" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6760" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6548:6581" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6548:6635" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6817:6871" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6817:7039" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6884:7008" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6932:7004" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7211:7435" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7244:7292" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7325:7413" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10789:11280" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10839:11255" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10901:11002" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="11053:11224" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/agenda.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="90" lean-forward="false" selection-start-line="54" selection-start-column="90" selection-end-line="54" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/taller.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" column="61" lean-forward="false" selection-start-line="69" selection-start-column="51" selection-end-line="77" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="89344" lean-forward="false" selection-start-line="4" selection-start-column="89344" selection-end-line="4" selection-end-column="89344" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/agenda.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="90" lean-forward="false" selection-start-line="54" selection-start-column="90" selection-end-line="54" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/taller.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" column="61" lean-forward="false" selection-start-line="69" selection-start-column="51" selection-end-line="77" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/my-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1853">
-          <caret line="166" column="83" lean-forward="false" selection-start-line="166" selection-start-column="83" selection-end-line="166" selection-end-column="83" />
-          <folding>
-            <element signature="e#1174#1552#0" expanded="false" />
-            <element signature="e#1600#1860#0" expanded="false" />
-            <element signature="e#3335#5705#0" expanded="false" />
-            <element signature="e#3342#3381#0" expanded="false" />
-            <element signature="e#3863#4032#0" expanded="false" />
-            <element signature="e#5750#7498#0" expanded="false" />
-            <element signature="e#7680#7930#0" expanded="false" />
-            <element signature="e#7986#9518#0" expanded="false" />
-            <element signature="n#!!block;n#logout#0" expanded="false" />
-            <element signature="n#!!block;n#getSolicitudes#0" expanded="false" />
-            <marker date="1530140756334" expanded="true" signature="6369:7066" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6469" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6695" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6760" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6548:6581" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6548:6635" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6817:6871" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6817:7039" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6884:7008" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6932:7004" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7211:7435" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7244:7292" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7325:7413" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10789:11280" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10839:11255" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10901:11002" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="11053:11224" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/about.html" />
-    <entry file="file://$PROJECT_DIR$/www/assets/js/pages/ui/dialogs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9044">
-          <caret line="4" column="89344" lean-forward="false" selection-start-line="4" selection-start-column="89344" selection-end-line="4" selection-end-column="89344" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/agenda.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="54" column="90" lean-forward="false" selection-start-line="54" selection-start-column="90" selection-end-line="54" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../themeforest-4021469-metronic-responsive-admin-dashboard-template/metronic_v5.1/metronic_v5.1/default/dist/default/index.html" />
-    <entry file="file://$PROJECT_DIR$/www/historial.html" />
-    <entry file="file://$PROJECT_DIR$/www/taller.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="80" lean-forward="false" selection-start-line="63" selection-start-column="80" selection-end-line="63" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="54" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2380">
-          <caret line="140" column="54" lean-forward="false" selection-start-line="140" selection-start-column="50" selection-end-line="140" selection-end-column="54" />
-          <folding>
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/perfil.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="12" column="46" lean-forward="false" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/my-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="44" selection-end-column="1" />
-          <folding>
-            <element signature="e#1174#1552#0" expanded="false" />
-            <element signature="e#1600#1860#0" expanded="false" />
-            <element signature="e#3335#5705#0" expanded="false" />
-            <element signature="e#3342#3381#0" expanded="false" />
-            <element signature="e#3863#4032#0" expanded="false" />
-            <element signature="e#5750#7498#0" expanded="false" />
-            <element signature="e#7680#7930#0" expanded="false" />
-            <element signature="e#7986#9518#0" expanded="false" />
-            <element signature="n#!!block;n#logout#0" expanded="false" />
-            <element signature="n#!!block;n#getSolicitudes#0" expanded="false" />
-            <marker date="1530140756334" expanded="true" signature="6369:7066" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6469" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6695" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6411:6760" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6548:6581" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6548:6635" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6817:6871" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6817:7039" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6884:7008" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="6932:7004" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7211:7435" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7244:7292" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="7325:7413" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10789:11280" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10839:11255" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="10901:11002" ph="..." />
-            <marker date="1530140756334" expanded="true" signature="11053:11224" ph="..." />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -922,6 +472,121 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2380">
+          <caret line="140" column="54" lean-forward="false" selection-start-line="140" selection-start-column="50" selection-end-line="140" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="54" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/my-app.js" />
+    <entry file="file://$PROJECT_DIR$/www/taller.html" />
+    <entry file="file://$PROJECT_DIR$/www/perfil.html" />
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2380">
+          <caret line="140" column="54" lean-forward="false" selection-start-line="140" selection-start-column="50" selection-end-line="140" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="54" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/taller.html" />
+    <entry file="file://$PROJECT_DIR$/www/perfil.html" />
+    <entry file="file://$PROJECT_DIR$/www/js/my-app.js" />
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2380">
+          <caret line="140" column="54" lean-forward="false" selection-start-line="140" selection-start-column="50" selection-end-line="140" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="54" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/taller.html" />
+    <entry file="file://$PROJECT_DIR$/www/perfil.html" />
+    <entry file="file://$PROJECT_DIR$/www/js/my-app.js" />
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/css/main.css" />
+    <entry file="file://$PROJECT_DIR$/www/js/my-app.js" />
+    <entry file="file://$PROJECT_DIR$/www/agenda.html" />
+    <entry file="file://$PROJECT_DIR$/www/taller.html" />
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/css/main.css" />
+    <entry file="file://$PROJECT_DIR$/www/js/my-app.js" />
+    <entry file="file://$PROJECT_DIR$/www/agenda.html" />
+    <entry file="file://$PROJECT_DIR$/www/taller.html" />
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/css/main.css" />
+    <entry file="file://$PROJECT_DIR$/www/agenda.html" />
+    <entry file="file://$PROJECT_DIR$/www/taller.html" />
+    <entry file="file://$PROJECT_DIR$/www/js/my-app.js" />
+    <entry file="file://$PROJECT_DIR$/www/about.html" />
+    <entry file="file://$PROJECT_DIR$/www/assets/js/pages/ui/dialogs.js" />
+    <entry file="file://$PROJECT_DIR$/www/assets/css/main.css" />
+    <entry file="file://$PROJECT_DIR$/www/agenda.html" />
+    <entry file="file://D:/themeforest-4021469-metronic-responsive-admin-dashboard-template/metronic_v5.1/metronic_v5.1/default/dist/default/index.html" />
+    <entry file="file://$PROJECT_DIR$/www/historial.html" />
+    <entry file="file://$PROJECT_DIR$/www/taller.html" />
+    <entry file="file://$PROJECT_DIR$/www/perfil.html" />
+    <entry file="file://$PROJECT_DIR$/www/js/my-app.js" />
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="140" column="54" lean-forward="false" selection-start-line="140" selection-start-column="50" selection-end-line="140" selection-end-column="54" />
         </state>
       </provider>
     </entry>

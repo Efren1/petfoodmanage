@@ -90,7 +90,7 @@ color:#2ad5dc;
 /* POPUPS AND TOOLBAR */
 /*===============================================*/	
 .popup, .page_content_menu{
-background: #233a5a;
+background: #ececec;
 }
 .popup-login, .popup-signup, .popup-forgot{
 background-color:#263239;

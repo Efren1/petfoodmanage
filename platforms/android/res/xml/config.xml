@@ -24,12 +24,12 @@
         <param name="android-package" value="com.gae.scaffolder.plugin.FCMPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <name>PetFood</name>
+    <name>Trofí</name>
     <description>
         Aplicación para alimentar mascotas.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
-        U Distrital
+        Universidad Distrital Francisco Jose de Caldas
     </author>
     <content src="index.html" />
     <access origin="*" />
