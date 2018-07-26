@@ -715,7 +715,12 @@ myApp.onPageInit('consultar_horario_programado',function(page){
 			  dia = 'Jueves';
 		  }else if(item.dia == 'V'){
 			  dia = 'Viernes';
+		  }else if(item.dia == 'S'){
+			  dia = 'Sábado';
+		  }else if(item.dia == 'D'){
+			  dia = 'Domingo';
 		  }
+		  
 		  
 		  // console.log(item.hora);
 		  var htmlDia = '<div class=\"swiper-slide\" ><div><h2>'+dia+'</h2>';
