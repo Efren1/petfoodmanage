@@ -677,7 +677,7 @@ myApp.onPageInit('consultar_horario_programado',function(page){
 	
 	var id = page.query.id;
 	var datos_mascotas = JSON.parse(localStorage.getItem('mis-mascotas'));
-	var token = localStorage.getItem('access-token');
+	var token = localStorage.getItem('token');
 	$$.each(datos_mascotas, function(index, item) {
     if (item.id == id) {
       $$('#id-mascotaUpdate').html(item.id);
@@ -689,7 +689,7 @@ myApp.onPageInit('consultar_horario_programado',function(page){
       
       $$('#foto_horarioPet').html(item.imagen);
 	  
-	  fetch(apiUrl+'/mascota/v01/' + idMascota + '/horario/alimento', {
+	  fetch(apiUrl+'/mascota/v01/' + id  + '/horario/alimento', {
 		method:'GET',
 		headers:{
 		  'Accept': 'application/json, text/plain',
@@ -700,24 +700,43 @@ myApp.onPageInit('consultar_horario_programado',function(page){
 		return response.json();
 	  }).then(function(data) {
 		console.log(data);
+		var html = "";
 		$$.each(data, function(index, item) {
-		  var dia = item.dia;
+		  
+		  
+		  var dia = '';
+		  if(item.dia == 'L'){
+			  dia = 'Lunes';
+		  }else if(item.dia == 'M'){
+			  dia = 'Martes';
+		  }else if(item.dia == 'W'){
+			  dia = 'Miércoles';
+		  }else if(item.dia == 'J'){
+			  dia = 'Jueves';
+		  }else if(item.dia == 'V'){
+			  dia = 'Viernes';
+		  }
+		  
 		  // console.log(item.hora);
+		  var htmlDia = '<div class=\"swiper-slide\" ><div><h2>'+dia+'</h2>';
+		  var htmlHora = "";
 		  $$.each(item.hora, function(index, item) {
 			var id = dia + index;
+			htmlHora = htmlHora +"<h4> "+index+" </h4> ";
+			
 		  }); 
+		  html = html +htmlDia + "<br> "+htmlHora + "</div></div>";
 		});
 		
-		$$('#datos_alimento_horario').append("<div class=\"swiper-container mascota_horario_slide\">"+
+		$$('#datos_alimento_horario').append("<div>"+
+											 "<div class=\"swiper-container mascota_horario_slide\">"+
 												"<div class=\"swiper-pagination login-pagination\"></div>" +
 												"<div class=\"swiper-wrapper\">" +
-													"<div class=\"swiper-slide\"><img src='../images/icons/red/delete.png'/></div>"+
-													"<div class=\"swiper-slide\"><img src='../images/icons/black/plus.png'/></div>"+
-													"<div class=\"swiper-slide\"><img src='../images/icons/blue/back.png'/></div>"+
+													html+
 												"</div>"+
 											"</div>"+
-											"<div class=\"swiper-button-prev login-prev\"></div>" +
-											"<div class=\"swiper-button-next login-next\"></div>" );
+											
+											"</div>" );
 		hiddenPreload();
 		var mySwiper = myApp.swiper('.mascota_horario_slide', {
 		  pagination: '.login-pagination',
@@ -725,10 +744,7 @@ myApp.onPageInit('consultar_horario_programado',function(page){
 		  paginationClickable: true,
 		  nextButton: '.login-next',
 		  prevButton: '.login-prev',
-		  speed: 2000,
-		  autoplay: {
-			delay: 2000,
-		  },
+		  speed: 2000
 		}); 
 	  }).catch(function(error){
 		// console.log(error);
@@ -1104,9 +1120,13 @@ function datos_prog_comida(){
       'access-token' : token
     }
   }).then(function(response) {
+	  console.log("Data guardar alimento ",response.status);
+	  if(response.status == 200){
+		  myApp.alert("El horario se parametrizo de manera correcta.");
+	  }
     // return response.json();
   }).then(function(data) {
-    console.log(data);
+    console.log("Data guardar alimento ",data);
     hiddenPreload();
   }).catch(function(error){
     console.log(error);
