@@ -236,6 +236,9 @@ font-size:14px;
 }
 .user_details p span{
 display:block;
+font-family:Arial, Helvetica, sans-serif;
+text-shadow:2px 0px 21px #eef5f5;
+color: #343838;
 font-size:22px;
 padding:5px 0 0 0;
 }
@@ -264,10 +267,12 @@ margin:0px;
 display:block;
 }
 .user-nav ul li{
-width:42%;
+width:39%;
 list-style:none;
-padding:12px 0;
-margin:0 0 0 5%;
+padding:45px 0;
+background-color:#3d3e50;
+margin:0% 30% 0% 30%;
+border-radius:100px 100px 100px 100px !important;
 display:inline-block;
 text-align:center;
 border-bottom:1px #3d3e50 solid;
@@ -308,7 +313,7 @@ display:block;
 width:47%;
 list-style:none;
 padding:10% 0;
-margin:1%;
+margin:3%;
 display:inline-block;
 text-align:center;
 position:relative;
@@ -447,6 +452,7 @@ clear:both;
 display:block;
 max-width:100%;
 margin:0 0 20px 0;
+border-radius: 100px 100px 100px 100px !important;
 }
 .page_content ul.simple_list{
 padding:10px;
@@ -630,7 +636,7 @@ float:left;
 clear:both;
 }
 ul.features_list_detailed li{
-padding:2% 2% 10% 2%;
+padding:2% 2% 2% 2%;
 margin:0 0 10px 0;
 display:block;
 width:96%;
@@ -657,17 +663,17 @@ right:1%;
 height:24px;
 }
 ul.features_list_detailed li .feat_small_icon{
-width:14%;
+width:25%;
 float:left;
 padding:0;
-margin:1% 0 0 1%;
+margin:2% 2% 0 4%;
 position:relative;
 /*left:-100%;*/
 }
 ul.features_list_detailed li .feat_small_details{
-width:82%;
+width:50%;
 float:left;
-padding:0 0 0 3%;
+padding:1% 1% 1% 3%;
 }
 
 ul.features_list_detailed li .feat_small_details p{
@@ -679,6 +685,7 @@ color:#232323;
 ul.features_list_detailed li .feat_small_icon img{
 display:inline-block;
 max-width:80%;
+border-radius:100px 100px 100px 100px !important;
 }
 ul.features_list_detailed li .feat_small_details h4{
 font-weight:900;
@@ -1799,7 +1806,7 @@ border-bottom:1px solid #d6d6d6;
 color:#505050;
 }
 .navbar, .toolbar, .subnavbar {
-    background: #fcab26;
+    background: #008c9e;
 }
 .picker-modal.smart-select-picker .toolbar::after {
     content: '';
@@ -1938,8 +1945,8 @@ width:100%;
 text-align:right;
 }
 .forgot_pass a{
-color:#007affb5;
-opacity: 0.5;
+color:#008c9e;
+opacity: 1;
 }
 .signup_bottom{
 width:100%;
@@ -2200,9 +2207,10 @@ margin:0px;
 }
 
 .singup-login{
-color: #007affb5;
+color:#008c9e;
+opacity: 1;
 text-align: center;
 padding: 0px 0 20px 0;
 margin: 0px;
-font-size: 14px;
+font-size: 16px;
 }

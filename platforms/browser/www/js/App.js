@@ -160,10 +160,10 @@ myApp.onPageInit('mascotas', function (page) {
 
 myApp.onPageInit('detalle_mascota', function(page){
   var id = page.query.id;
-  html = '<li><a href="programar_comida.html?id=' + id + '" ><img src="images/icons/blue/timeProgram.png"/><span>PROGRAMAR COMIDA</span></a></li>' +
-         '<li><a href="#" onclick="comida_ya(' + id + ')"><img src="images/icons/blue/dog-food.png"/><span>DAR DE COMER</span></a></li>' +
-         '<li><a href="modificar_mascota.html?id=' + id + '"><img src="images/icons/blue/modification.png"/><span>MODIFICAR MASCOTA</span></a></li>' +
-         '<li><a href="horarios_programados.html?id=' + id + '"><img src="images/icons/blue/blog.png"/><span>HORARIOS PROGRAMADOS</span></a></li>' +
+  html = '<li><a href="programar_comida.html?id=' + id + '" ><img src="images/icons/blue/timeProgram.png"/><span>PROGRAMAR<BR/>  COMIDA</span></a></li>' +
+         '<li><a href="#" onclick="comida_ya(' + id + ')"><img src="images/icons/blue/dog-food.png"/><span>DAR<BR/>  COMIDA</span></a></li>' +
+         '<li><a href="modificar_mascota.html?id=' + id + '"><img src="images/icons/blue/modification.png"/><span>MODIFICAR <BR/> MASCOTA</span></a></li>' +
+         '<li><a href="horarios_programados.html?id=' + id + '"><img src="images/icons/blue/blog.png"/><span>HORARIOS <BR/> PROGRAMADOS</span></a></li>' +
          '<li><a href="#" onclick="eliminar_mascota(' + id + ')" ><img src="images/icons/blue/delete.png"/><span>ELIMINAR MASCOTA</span></a></li>';
   $$('#detalle-mascota').html(html);
 })

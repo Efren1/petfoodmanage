@@ -30,7 +30,7 @@
             </div>
             <div class="form_row">
               <div class="form_row_icon"><img src="images/icons/blue/blog.png" /></div>
-              <input type="text" id="input-edad" class="form_input" placeholder="Edad (años)" required/>
+              <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="input-edad" class="form_input" placeholder="Edad (años)" required/>
             </div>
             <div class="form_row">
               <div class="form_row_icon"><img src="images/icons/blue/cat.png" /></div>
