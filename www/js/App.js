@@ -147,7 +147,7 @@ myApp.onPageInit('mascotas', function (page) {
               '  </div>' +
               // '  <span class="plus_icon" style="right: 8%;"><a href="modificar_mascota.html?id=' + item.id + '"><img src="images/icons/blue/Pencil1.png" alt="" title="" /></a></span>' +
 			  '  </a> '+
-              '  <span class="plus_icon"><a href="detalles_mascotas.html?id=' + item.id + '"><img src="images/icons/blue/plus.png" alt="" title="" /></a></span>' +
+              '  <span class="plus_icon"><a href="detalles_mascotas.html?id=' + item.id + '"><img src="image/icons/pencil2.png" style = "width: 50%;  margin: -25% 34%;" alt="" title="" /></a></span>' +
               '</li>';
 		});
 		$$('#mis_mascotas').html(html);
@@ -1017,7 +1017,7 @@ myApp.onPageInit('programar_comida',function(page){
                                               index + 
                                           " </div>" +
                                           " <div style='text-align: -webkit-right;' onclick='delete_horas(" + '"' + id + '"' + ")' class='col-20'>" +
-                                          "   <img src='../images/icons/red/delete.png'/>" +
+                                          "   <img class ='image_horario' src='../images/icons/red/delete_1.png'/>" +
                                           " </div>" +
                                           "</div>");
       }); 
@@ -1039,7 +1039,7 @@ function datos_alimento(dia){
                                               $$('#picker-date' + dia).val() + 
                                           " </div>" +
                                           " <div style='text-align: -webkit-right;' onclick='delete_horas(" + '"' + id + '"' + ")' class='col-20'>" +
-                                          "   <img src='../images/icons/red/delete.png'/>" +
+                                          "   <img class ='image_horario'  src='../images/icons/red/delete_1.png'/>" +
                                           " </div>" +
                                           "</div>");
 }
