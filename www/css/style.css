@@ -233,6 +233,26 @@ z-index:888;
 background:url(images/trans_black_gradient.png) repeat-x;
 
 }
+
+.user_details_profile{
+background-color:#f5f2f2a8 !important;
+width:100%;
+z-index:888;
+
+}
+.user_details_profile p{
+text-align:left;
+font-size:14px;
+}
+
+.user_details_profile p span{
+display:block;
+font-family:Arial, Helvetica, sans-serif;
+text-shadow:2px 0px 21px #eef5f5;
+color: #343838;
+font-size:22px;
+padding:5px 0 0 0;
+}
 .user_details p{
 padding:100px 0 0 10px;
 text-align:left;

@@ -1051,7 +1051,7 @@ function delete_horas(id){
       j[hora] = "E";
   showPreload();
   fetch(apiUrl+'/mascota/v01/' + idMascota + '/horario/alimento', {
-    method:'PUT',
+    method:'POST',
     body:JSON.stringify([{
       dia: dia, 
       hora: j
