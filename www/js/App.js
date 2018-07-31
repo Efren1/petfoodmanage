@@ -160,11 +160,11 @@ myApp.onPageInit('mascotas', function (page) {
 
 myApp.onPageInit('detalle_mascota', function(page){
   var id = page.query.id;
-  html = '<li><a href="programar_comida.html?id=' + id + '" ><img src="images/icons/blue/timeProgram.png"/><span>PROGRAMAR<BR/>  COMIDA</span></a></li>' +
-         '<li><a href="#" onclick="comida_ya(' + id + ')"><img src="images/icons/blue/dog-food.png"/><span>DAR<BR/>  COMIDA</span></a></li>' +
-         '<li><a href="modificar_mascota.html?id=' + id + '"><img src="images/icons/blue/modification.png"/><span>MODIFICAR <BR/> MASCOTA</span></a></li>' +
-         '<li><a href="horarios_programados.html?id=' + id + '"><img src="images/icons/blue/blog.png"/><span>HORARIOS <BR/> PROGRAMADOS</span></a></li>' +
-         '<li><a href="#" onclick="eliminar_mascota(' + id + ')" ><img src="images/icons/blue/delete.png"/><span>ELIMINAR MASCOTA</span></a></li>';
+  html = '<li><a href="programar_comida.html?id=' + id + '" ><img src="image/green/programarcomida.png"/><span>PROGRAMAR<BR/>  COMIDA</span></a></li>' +
+         '<li><a href="#" onclick="comida_ya(' + id + ')"><img src="image/green/dardecomer.png"/><span>DAR<BR/>  COMIDA</span></a></li>' +
+         '<li><a href="modificar_mascota.html?id=' + id + '"><img src="image/green/modificarmascota.png"/><span>MODIFICAR <BR/> MASCOTA</span></a></li>' +
+         '<li><a href="horarios_programados.html?id=' + id + '"><img src="image/green/horariosprogramados.png"/><span>HORARIOS <BR/> PROGRAMADOS</span></a></li>' +
+         '<li><a href="#" onclick="eliminar_mascota(' + id + ')" ><img src="image/green/eliminar.png"/><span>ELIMINAR MASCOTA</span></a></li>';
   $$('#detalle-mascota').html(html);
 })
 
@@ -723,11 +723,23 @@ myApp.onPageInit('consultar_horario_programado',function(page){
 		  
 		  
 		  // console.log(item.hora);
-		  var htmlDia = '<div class=\"swiper-slide\" ><div><h2>'+dia+'</h2>';
+		  var htmlDia = "<div class=\"swiper-slide\" ><div><h2>"+dia+"</h2>";
 		  var htmlHora = "";
 		  $$.each(item.hora, function(index, item) {
 			var id = dia + index;
-			htmlHora = htmlHora +"<h4> "+index+" </h4> ";
+			var estado = '';
+			var color = '';
+			if(item== 'P'){//Procesadoe
+				estado = 'Proceso completo';
+				color = 'green';
+			}else if(item== 'E'){//Errado
+				estado = 'Proceso errado';			
+				color = 'red';
+			}else if(item== 'R'){//Registrado
+				estado = 'Registrado';			
+				color = 'blue';
+			}
+			htmlHora = htmlHora +"<h4> "+index+" </h4> <span style='color:"+color+";'>"+estado+"</span>";
 			
 		  }); 
 		  html = html +htmlDia + "<br> "+htmlHora + "</div></div>";
@@ -1017,7 +1029,7 @@ myApp.onPageInit('programar_comida',function(page){
                                               index + 
                                           " </div>" +
                                           " <div style='text-align: -webkit-right;' onclick='delete_horas(" + '"' + id + '"' + ")' class='col-20'>" +
-                                          "   <img class ='image_horario' src='../images/icons/red/delete_1.png'/>" +
+                                          "   <img class ='image_horario' src='images/icons/red/delete_1.png'/>" +
                                           " </div>" +
                                           "</div>");
       }); 
@@ -1039,7 +1051,7 @@ function datos_alimento(dia){
                                               $$('#picker-date' + dia).val() + 
                                           " </div>" +
                                           " <div style='text-align: -webkit-right;' onclick='delete_horas(" + '"' + id + '"' + ")' class='col-20'>" +
-                                          "   <img class ='image_horario'  src='../images/icons/red/delete_1.png'/>" +
+                                          "   <img class ='image_horario'  src='images/icons/red/delete_1.png'/>" +
                                           " </div>" +
                                           "</div>");
 }
