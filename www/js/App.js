@@ -169,11 +169,11 @@ myApp.onPageInit('detalle_mascota', function(page){
 })
 
 function comida_ya(id){
-  myApp.alert('<br><div>Activar Mecanismo</div><br>' +
+  myApp.alert('<br><div>Activar Mecanismo Trofí</div><br>' +
               '<label class="label-switch">' +
-              '  <input type="checkbox" id="dispensar" onchange="dispensar(' + id + ')">' +
+              '  <input type="checkbox" id="dispensar" >' +
               '  <div class="checkbox"></div>' +
-              '<label>');
+              '<label>',function (){dispensar(id)} );
 }
 
 function dispensar(id){
@@ -705,47 +705,57 @@ myApp.onPageInit('consultar_horario_programado',function(page){
 		  
 		  
 		  var dia = '';
+		  var imagen = '';
 		  if(item.dia == 'L'){
 			  dia = 'Lunes';
+			  imagen = 'lunes.png';
 		  }else if(item.dia == 'M'){
 			  dia = 'Martes';
+			  imagen = 'martes.png';
 		  }else if(item.dia == 'W'){
 			  dia = 'Miércoles';
+			  imagen = 'miercoles.png';
 		  }else if(item.dia == 'J'){
 			  dia = 'Jueves';
+			  imagen = 'jueves.png';
 		  }else if(item.dia == 'V'){
 			  dia = 'Viernes';
+			  imagen = 'viernes.png';
 		  }else if(item.dia == 'S'){
 			  dia = 'Sábado';
+			  imagen = 'sabado.png';
 		  }else if(item.dia == 'D'){
 			  dia = 'Domingo';
+			  imagen = 'domingo.png';
 		  }
 		  
 		  
 		  // console.log(item.hora);
-		  var htmlDia = "<div class=\"swiper-slide\" ><div><h2>"+dia+"</h2>";
+		  var htmlDia = "<div class=\"swiper-slide\" ><div style='margin: 10%;'><img style = 'width: 15%;' src='image/iconos_app/"+imagen+"' /><h1>"+dia+"</h1>";
 		  var htmlHora = "";
 		  $$.each(item.hora, function(index, item) {
+			  
 			var id = dia + index;
 			var estado = '';
 			var color = '';
+			
 			if(item== 'P'){//Procesadoe
 				estado = 'Proceso completo';
-				color = 'green';
+				color = '#08a95f';
 			}else if(item== 'E'){//Errado
 				estado = 'Proceso errado';			
-				color = 'red';
+				color = '#920202';
 			}else if(item== 'R'){//Registrado
 				estado = 'Registrado';			
-				color = 'blue';
+				color = '#008c9e';
 			}
-			htmlHora = htmlHora +"<h4> "+index+" </h4> <span style='color:"+color+";'>"+estado+"</span>";
+			htmlHora = htmlHora +"<h4> "+index+" <span style='color:"+color+";'>"+estado+"</span></h4>";
 			
 		  }); 
 		  html = html +htmlDia + "<br> "+htmlHora + "</div></div>";
 		});
 		
-		$$('#datos_alimento_horario').append("<div>"+
+		$$('#datos_alimento_horario').append("<div style='height: 100%;'>"+
 											 "<div class=\"swiper-container mascota_horario_slide\">"+
 												"<div class=\"swiper-pagination login-pagination\"></div>" +
 												"<div class=\"swiper-wrapper\">" +
@@ -782,6 +792,7 @@ myApp.onPageInit('programar_comida',function(page){
 
   idMascota = page.query.id;
   var today = new Date();
+  var dataDias = [];
 
   var pickerInlineL = myApp.picker ({
             input: '#picker-dateL',
@@ -1043,9 +1054,11 @@ myApp.onPageInit('programar_comida',function(page){
 
 });
 
+
 function datos_alimento(dia){
-  var datos = $$('#picker-date' + dia).val().split(":");
-  var id = dia + datos[0] + datos[1];
+	var datos = $$('#picker-date' + dia).val().split(":");
+	var id = dia + datos[0] + datos[1];
+  
   $$('#' + dia + 'datos_alimento').append("<div class='row data' id='" + id + "' data-id='" + dia + "' style='border-bottom: 3px dotted dodgerblue; margin-bottom: 15px;'>" +
                                           " <div class='col-80 texto-pro-comida'>" + 
                                               $$('#picker-date' + dia).val() + 
