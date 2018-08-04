@@ -30,7 +30,7 @@
             </div>
             <div class="form_row">
               <div class="form_row_icon"><img src="images/icons/blue/blog.png" /></div>
-              <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="input-edad" class="form_input" placeholder="Edad (años)" required/>
+              <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="input-edad" class="form_input" placeholder="Edad (años)" maxlength = "3" required/>
             </div>
             <div class="form_row">
               <div class="form_row_icon"><img src="images/icons/blue/cat.png" /></div>
@@ -62,8 +62,8 @@
               <input type="text" id="input-id-dispositivo" class="form_input" placeholder="QR Dispensador"  required/>
               <button onclick="qrRegister()" class="form_row" style="width: 10%; height: 5%; position: absolute; background-color: white; border: none;"><img src="images/icons/blue/qr-code.png" style="width: 85%; padding: 3px;" /></button>
             </div>
-            <input type="submit" name="submit" class="form_submit" id="submit" value="Registrar" />
           </form>
+            <input type="submit" name="submit" class="form_submit" id="submit" value="Registrar" />
         </div>
       </div>
     </div> 
