@@ -32,11 +32,41 @@
             </div>
             <div class="form_row">
               <div class="form_row_icon"><img src="images/icons/blue/blog.png" /></div>
-              <input type="text" id="input-edadMascotaUpdate" class="form_input" placeholder="Edad" />
+              <input oninput="this.value=this.value.replace(/[^0-9]/g,'');"  type="text" id="input-edadMascotaUpdate" class="form_input" placeholder="Edad"  maxlength = "3" />
             </div>
             <div class="form_row">
               <div class="form_row_icon"><img src="images/icons/blue/cat.png" /></div>
-              <input type="text" id="input-tipoMascotaUpdate" class="form_input" placeholder="Tipo" />
+			  <div class="custom_select">
+                <a href="#" class="item-link smart-select" data-open-in="picker">
+                <div class="item-content">
+                  <div class="item-inner">
+                  <div class="item-after">Custom Select</div>
+                  </div>
+                </div>
+                <select name="selectors" id="input-tipoMascotaUpdate">
+					<option value="Perro" selected>Perro</option>
+                    <option value="Gato">Gato</option>
+                </select>
+                </a>
+              </div>
+			  
+            </div>
+			<div class="form_row">
+              <div class="form_row_icon"><img src="images/icons/blue/rule.png" /></div>
+			  <div class="custom_select">
+                <a href="#" class="item-link smart-select" data-open-in="picker">
+                <div class="item-content">
+                  <div class="item-inner">
+                  <div class="item-after">Custom Select</div>
+                  </div>
+                </div>
+                <select name="selectors" id="input-tamanioMascotaUpdate">
+					<option value="S" selected>Pequeño (1kg - 14Kg)</option>
+                    <option value="M">Mediano (15Kg - 29Kg)</option>
+					<option value="B">Grande (30Kg - 55Kg)</option>
+                </select>
+                </a>
+              </div>
             </div>
             <div class="form_row">
               <div class="form_row_icon"><img src="images/icons/blue/pet..png" /></div>

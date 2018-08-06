@@ -49,8 +49,26 @@
                 </a>
               </div>
             </div>
+			<div class="form_row">
+              <div class="form_row_icon"><img src="images/icons/blue/cat.png" /></div>
+              <!-- <input type="text" id="input-tipo" class="form_input" placeholder="Tipo" required/> -->
+              <div class="custom_select">
+                <a href="#" class="item-link smart-select" data-open-in="picker">
+                <div class="item-content">
+                  <div class="item-inner">
+                  <div class="item-after">Custom Select</div>
+                  </div>
+                </div>
+                <select name="selectors" id="input-tamanio">
+					<option value="S" selected>Pequeño (1kg - 14Kg)</option>
+                    <option value="M">Mediano (15Kg - 29Kg)</option>
+					<option value="B">Grande (30Kg - 55Kg)</option>
+                </select>
+                </a>
+              </div>
+            </div>
             <div class="form_row">
-              <div class="form_row_icon"><img src="images/icons/blue/pet..png" /></div>
+              <div class="form_row_icon"><img src="images/icons/blue/pet.png" /></div>
               <input type="text" id="input-raza" class="form_input" placeholder="Raza" required/>
             </div>
             <div class="form_row">
@@ -62,8 +80,8 @@
               <input type="text" id="input-id-dispositivo" class="form_input" placeholder="QR Dispensador"  required/>
               <button onclick="qrRegister()" class="form_row" style="width: 10%; height: 5%; position: absolute; background-color: white; border: none;"><img src="images/icons/blue/qr-code.png" style="width: 85%; padding: 3px;" /></button>
             </div>
+			<input type="submit" name="submit" class="form_submit" id="submit" value="Registrar" />
           </form>
-            <input type="submit" name="submit" class="form_submit" id="submit" value="Registrar" />
         </div>
       </div>
     </div> 

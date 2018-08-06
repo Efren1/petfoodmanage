@@ -237,6 +237,15 @@ function eliminar_mascota(id){
 myApp.onPageInit('modificar_mascota', function(page){
   var id = page.query.id;
   var datos_mascotas = JSON.parse(localStorage.getItem('mis-mascotas'));
+  $('.user_avatar').click(
+    function(){
+      capturePhotoEditMascota();
+    }
+  );
+  foto_registerPet = document.getElementById('foto_registerPet');
+  pictureSource=navigator.camera.PictureSourceType;
+  destinationType=navigator.camera.DestinationType;
+  
   $$.each(datos_mascotas, function(index, item) {
     if (item.id == id) {
       $$('#id-mascotaUpdate').html(item.id);
@@ -250,6 +259,7 @@ myApp.onPageInit('modificar_mascota', function(page){
       $$('#input-nombreMascotaUpdate').val(item.nombre);
       $$('#input-edadMascotaUpdate').val(item.edad);
       $$('#input-tipoMascotaUpdate').val(item.tipo);
+	  $$('#input-tamanioMascotaUpdate').val(item.tamanio);
       $$('#input-razaMascotaUpdate').val(item.raza);
       $$('#input-descripcionMascotaUpdate').val(item.descripcion);
       return;
@@ -267,8 +277,9 @@ $$(document).on('submit','#form-mascotaUpdate',function(e){
       edad: $$('#input-edadMascotaUpdate').val(),
       raza: $$('#input-razaMascotaUpdate').val(),
       descripcion: $$('#input-descripcionMascotaUpdate').val(),
+	  tamanio: $$('#input-tamanioMascotaUpdate').val(),
       tipo: $$('#input-tipoMascotaUpdate').val(),
-      imagen: $$('#photo-mascotaUpdate').html()
+      imagen: foto_registerPet
     }),
     headers:{
       'Accept': 'application/json, text/plain',
@@ -441,6 +452,8 @@ $$(document).on('submit','#form-registro', function (e) {
     myApp.alert('Por favor capture una fotografia de la mascota');
   }else if ($$('#input-tipo').val() == '') {
     myApp.alert('Por favor ingrese el tipo de mascota');
+  }else if ($$('#input-tamanio').val() == '') {
+    myApp.alert('Por favor ingrese el tamaño de mascota');
   }else if ($$('#input-id-dispositivo').val() == '') {
     myApp.alert('Por favor el id del dispositivo');
   }else{
@@ -454,6 +467,7 @@ $$(document).on('submit','#form-registro', function (e) {
       descripcion: $$('#input-descripcion-mascota').val(),
       imagen: $$('#photo_registerPet').html(),
       tipo: $$('#input-tipo').val(),
+	  tamanio: $$('#input-tamanio').val(),
       dispositivo: {
         codigoQr : $$('#input-id-dispositivo').val()
       }
