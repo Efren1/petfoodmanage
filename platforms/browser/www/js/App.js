@@ -158,11 +158,103 @@ myApp.onPageInit('mascotas', function (page) {
 	});
 });
 
+var idMascota;
+myApp.onPageInit('redes_wifi', function (page) {
+    myApp.closePanel();
+    idMascota = page.query.id;
+    showPreload();
+    fetch(apiUrl+'/mascota/v01/' + idMascota + '/red/historico', {
+        method:'GET',
+        headers:{
+          'Accept': 'application/json, text/plain',
+            'Content-Type':'application/json',
+          'access-token' : token
+        }
+    }).then(function(response) {
+      return response.json();
+    }).then(function(data) {
+      console.log("*/***************************");
+	  console.log(data);
+      if (data.codigo == "ERR_EMPTY") {
+		  console.log("*/*************************** 22 2");
+        var html = '<ul>' +
+				'<li>' +
+                '  <a href = "#" class = "item-link item-content">' +
+                '    <div class = "item-media"><img style=" width: 100%; margin: 25px 0 0 100px;" src = "image/green/wanted.png" width = "44"></div>' +
+                '    </div>' +
+				'      <div class = "item-inner">' +
+                '        <div class = "item-title-row">' +
+                '          <div class = "item-title">' + data.mensaje + '</div>' +
+                '        </div>' +
+                '  </a>' +
+				'</li>' ;
+                '</ul>' ;
+        $$('#redes_disponibles').html(html);
+      }else{
+      // localStorage.setItem('mis-mascotas',JSON.stringify(data));
+      var html = '';
+      $$.each(data, function(index, item) {
+        html += '<ul>'+
+				'<li>' +
+                '  <a href = "#" onclick="agregar_red(' + item.id + ',' + "'" + item.nombre + "'" + ')" class = "item-link item-content">' +
+                '    <div class = "item-media"><img src = "/image/green/wifi-signal.png" width = "44"></div>' +
+                '      <div class = "item-inner">' +
+                '        <div class = "item-title-row">' +
+                '          <div class = "item-title">' + item.nombre + '</div>' +
+                '        </div>' +
+                '      <div class = "item-subtitle">' + ((item.estado == "A") ? "Guardada" : "") + '</div>' +
+                '    </div>' +
+                '  </a>' +
+				'</li>' 
+                '</ul>' ;
+      });
+      }
+      $$('#redes_disponibles').html(html);
+      hiddenPreload();
+    }).catch(function(error){
+      myApp.alert('Ha ocurrido un error, por favor inténtalo de nuevo.','',tituloalert,'Aceptar');
+      hiddenPreload();
+    });
+})
+
+function agregar_red(id, nombre){
+  var id = id;
+  var nombre = nombre;
+  myApp.prompt('Ingresa la contraseña de tu red: ',tituloalert,function (results){
+    console.log(results);
+    showPreload();
+    fetch(apiUrl+'/mascota/v01/' + idMascota + '/red', {
+        method:'POST',
+        body:JSON.stringify({
+          id: id,
+          nombre: nombre,
+          clave: results
+        }),
+        headers:{
+          'Accept': 'application/json, text/plain',
+            'Content-Type':'application/json',
+          'access-token' : token
+        }
+    }).then(function(response) {
+      return response.json();
+    }).then(function(data) {
+      console.log(data);
+      myApp.alert('Se ha guardado tu red local.','',tituloalert,'Aceptar');
+      mainView.loadPage({url: 'mascotas.html'});
+      hiddenPreload();
+    }).catch(function(error){
+      myApp.alert('Ha ocurrido un error, por favor inténtalo de nuevo!','',tituloalert,'Aceptar');
+      hiddenPreload();
+    });
+});
+}
+
 myApp.onPageInit('detalle_mascota', function(page){
   var id = page.query.id;
   html = '<li><a href="programar_comida.html?id=' + id + '" ><img src="image/green/programarcomida.png"/><span>PROGRAMAR<BR/>  COMIDA</span></a></li>' +
          '<li><a href="#" onclick="comida_ya(' + id + ')"><img src="image/green/dardecomer.png"/><span>DAR<BR/>  COMIDA</span></a></li>' +
          '<li><a href="modificar_mascota.html?id=' + id + '"><img src="image/green/modificarmascota.png"/><span>MODIFICAR <BR/> MASCOTA</span></a></li>' +
+		 '<li><a href="internet_mascota.html?id=' + id + '"><img src="image/green/wifi.png"/><span>CONEXIÓN <BR/> WIFI</span></a></li>' +
          '<li><a href="horarios_programados.html?id=' + id + '"><img src="image/green/horariosprogramados.png"/><span>HORARIOS <BR/> PROGRAMADOS</span></a></li>' +
          '<li><a href="#" onclick="eliminar_mascota(' + id + ')" ><img src="image/green/eliminar.png"/><span>ELIMINAR MASCOTA</span></a></li>';
   $$('#detalle-mascota').html(html);
@@ -260,6 +352,8 @@ myApp.onPageInit('modificar_mascota', function(page){
       $$('#input-edadMascotaUpdate').val(item.edad);
       $$('#input-tipoMascotaUpdate').val(item.tipo);
 	  $$('#input-tamanioMascotaUpdate').val(item.tamanio);
+	  //$$('#input-tamanioMascotaUpdate option[value="'+item.tamanio+'"]').props('selected', true);
+	  $('#input-tamanioMascotaUpdate option[value="'+item.tamanio+'"]').prop('selected', true);
       $$('#input-razaMascotaUpdate').val(item.raza);
       $$('#input-descripcionMascotaUpdate').val(item.descripcion);
       return;
