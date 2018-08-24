@@ -192,12 +192,11 @@ myApp.onPageInit('redes_wifi', function (page) {
         $$('#redes_disponibles').html(html);
       }else{
       // localStorage.setItem('mis-mascotas',JSON.stringify(data));
-      var html = '';
+      var html = '<ul>';
       $$.each(data, function(index, item) {
-        html += '<ul>'+
-				'<li>' +
+        html += '<li>' +
                 '  <a href = "#" onclick="agregar_red(' + item.id + ',' + "'" + item.nombre + "'" + ')" class = "item-link item-content">' +
-                '    <div class = "item-media"><img src = "/image/green/wifi-signal.png" width = "44"></div>' +
+                '    <div class = "item-media"><img src = "image/green/wifi-signal.png" width = "44"></div>' +
                 '      <div class = "item-inner">' +
                 '        <div class = "item-title-row">' +
                 '          <div class = "item-title">' + item.nombre + '</div>' +
@@ -205,10 +204,10 @@ myApp.onPageInit('redes_wifi', function (page) {
                 '      <div class = "item-subtitle">' + ((item.estado == "A") ? "Guardada" : "") + '</div>' +
                 '    </div>' +
                 '  </a>' +
-				'</li>' 
-                '</ul>' ;
+				'</li>';
       });
       }
+	  html += '</ul>';
       $$('#redes_disponibles').html(html);
       hiddenPreload();
     }).catch(function(error){
@@ -252,11 +251,11 @@ function agregar_red(id, nombre){
 myApp.onPageInit('detalle_mascota', function(page){
   var id = page.query.id;
   html = '<li><a href="programar_comida.html?id=' + id + '" ><img src="image/green/programarcomida.png"/><span>PROGRAMAR<BR/>  COMIDA</span></a></li>' +
-         '<li><a href="#" onclick="comida_ya(' + id + ')"><img src="image/green/dardecomer.png"/><span>DAR<BR/>  COMIDA</span></a></li>' +
-         '<li><a href="modificar_mascota.html?id=' + id + '"><img src="image/green/modificarmascota.png"/><span>MODIFICAR <BR/> MASCOTA</span></a></li>' +
-		 '<li><a href="internet_mascota.html?id=' + id + '"><img src="image/green/wifi.png"/><span>CONEXIÓN <BR/> WIFI</span></a></li>' +
          '<li><a href="horarios_programados.html?id=' + id + '"><img src="image/green/horariosprogramados.png"/><span>HORARIOS <BR/> PROGRAMADOS</span></a></li>' +
-         '<li><a href="#" onclick="eliminar_mascota(' + id + ')" ><img src="image/green/eliminar.png"/><span>ELIMINAR MASCOTA</span></a></li>';
+		 '<li><a href="#" onclick="comida_ya(' + id + ')"><img src="image/green/dardecomer.png"/><span>DAR<BR/>  COMIDA</span></a></li>' +
+		 '<li><a href="internet_mascota.html?id=' + id + '"><img src="image/green/wifi.png"/><span>CONEXIÓN <BR/> WIFI</span></a></li>' +
+		 '<li><a href="modificar_mascota.html?id=' + id + '"><img src="image/green/modificarmascota.png"/><span>MODIFICAR <BR/> MASCOTA</span></a></li>' +
+         '<li><a href="#" onclick="eliminar_mascota(' + id + ')" ><img src="image/green/eliminar.png"/><span>ELIMINAR <BR/> MASCOTA</span></a></li>';
   $$('#detalle-mascota').html(html);
 })
 
@@ -780,6 +779,7 @@ var hiddenPreload = function (e) {
 
 var idMascota;
 var json = [];
+var jsonEliminar = [];
 
 myApp.onPageInit('consultar_horario_programado',function(page){
 	
@@ -869,8 +869,9 @@ myApp.onPageInit('consultar_horario_programado',function(page){
 												"<div class=\"swiper-wrapper\">" +
 													html+
 												"</div>"+
+												"<div class='swiper-button-prev login-prev'></div>"+
+                                                "<div class='swiper-button-next login-next'></div>"+
 											"</div>"+
-											
 											"</div>" );
 		hiddenPreload();
 		var mySwiper = myApp.swiper('.mascota_horario_slide', {
@@ -901,7 +902,7 @@ myApp.onPageInit('programar_comida',function(page){
   idMascota = page.query.id;
   var today = new Date();
   var dataDias = [];
-
+  jsonEliminar = [];
   var pickerInlineL = myApp.picker ({
             input: '#picker-dateL',
             container: '#picker-date-containerL',
@@ -1140,9 +1141,9 @@ myApp.onPageInit('programar_comida',function(page){
     console.log(data);
     $$.each(data, function(index, item) {
       var dia = item.dia;
-      // console.log(item.hora);
+      //console.log('popo',item.hora);
       $$.each(item.hora, function(index, item) {
-        var id = dia + index;
+        var id = dia + index.split(':').join('');
         $$('#' + dia + 'datos_alimento').append("<div class='row data' id='" + id + "' data-id='" + dia + "' style='border-bottom: 3px dotted dodgerblue; margin-bottom: 15px;'>" +
                                           " <div class='col-80 texto-pro-comida'>" + 
                                               index + 
@@ -1180,31 +1181,12 @@ function datos_alimento(dia){
 function delete_horas(id){
   var dia = id.substr(0,1);
   var hora = id.substr(1);
+  console.log('horas',hora);
+  var horaFinal = hora.substr(0,2)+':'+hora.substr(2,2)+':00';
   var j = {};
-      j[hora] = "E";
-  showPreload();
-  fetch(apiUrl+'/mascota/v01/' + idMascota + '/horario/alimento', {
-    method:'POST',
-    body:JSON.stringify([{
-      dia: dia, 
-      hora: j
-    }]),
-    headers:{
-      'Accept': 'application/json, text/plain',
-      'Content-Type': 'application/json',
-      'access-token' : token
-    }
-  }).then(function(response) {
-    return response.json();
-  }).then(function(data) {
-    console.log(data);
-    $$("#" + id).remove();
-    hiddenPreload();
-  }).catch(function(error){
-    console.log(error);
-    // myApp.alert('Ha ocurrido un error, por favor inténtalo de nuevo!!!');
-    hiddenPreload();
-  });
+      j[horaFinal] = "E";
+  jsonEliminar.push({'dia':dia,'hora':j});
+  $$("#" + id).remove();
  }
 
 function datos_prog_comida(){
@@ -1271,5 +1253,29 @@ function datos_prog_comida(){
     // myApp.alert('Ha ocurrido un error, por favor inténtalo de nuevo!!!');
     hiddenPreload();
   });
+  
+  
+  console.log("Informaciónd e objeto a eliminar ",jsonEliminar);
+  showPreload();
+  fetch(apiUrl+'/mascota/v01/' + idMascota + '/horario/alimento', {
+    method:'POST',
+    body:JSON.stringify(jsonEliminar),
+    headers:{
+      'Accept': 'application/json, text/plain',
+      'Content-Type': 'application/json',
+      'access-token' : token
+    }
+  }).then(function(response) {
+    return response.json();
+  }).then(function(data) {
+    console.log(data);
+    $$("#" + id).remove();
+    hiddenPreload();
+  }).catch(function(error){
+    console.log(error);
+    // myApp.alert('Ha ocurrido un error, por favor inténtalo de nuevo!!!');
+    hiddenPreload();
+  });
+  
 
 }
