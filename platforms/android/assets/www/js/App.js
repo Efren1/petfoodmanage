@@ -163,8 +163,10 @@ myApp.onPageInit('mascotas', function (page) {
 });
 
 var idMascota;
+var banderaEliminarRed;
 myApp.onPageInit('redes_wifi', function (page) {
     myApp.closePanel();
+	banderaEliminarRed = false;
     idMascota = page.query.id;
     showPreload();
     fetch(apiUrl+'/mascota/v01/' + idMascota + '/red/historico', {
@@ -199,14 +201,15 @@ myApp.onPageInit('redes_wifi', function (page) {
       var html = '<ul>';
       $$.each(data, function(index, item) {
         html += '<li>' +
-                '  <a href = "#" onclick="agregar_red(' + item.id + ',' + "'" + item.nombre + "'" + ')" class = "item-link item-content">' +
-                '    <div class = "item-media"><img src = "image/green/wifi-signal.png" width = "44"></div>' +
+                '  <a href = "#" class = "item-link item-content" onclick="agregar_red(' + item.id + ',' + "'" + item.nombre + "'" + ')">' +
+				'    <div class = "item-media" ><img src = "image/green/wifi-signal.png" width = "44"></div>' +
                 '      <div class = "item-inner">' +
                 '        <div class = "item-title-row">' +
                 '          <div class = "item-title">' + item.nombre + '</div>' +
                 '        </div>' +
                 '      <div class = "item-subtitle">' + ((item.estado == "A") ? "Guardada" : "") + '</div>' +
                 '    </div>' +
+				'    <img onclick="alertaRed(' + item.id + ',' + "'" + item.nombre + "'" + ')"src = "images/icons/red/delete_1.png" width = "25" height = "25" style="padding: 3%">' +
                 '  </a>' +
 				'</li>';
       });
@@ -220,8 +223,15 @@ myApp.onPageInit('redes_wifi', function (page) {
     });
 })
 
+function alertaRed(id,nombre){
+	banderaEliminarRed = true;
+	myApp.alert('Esta seguro de eliminar esta.','',tituloalert,'Aceptar');
+	
+}
 function agregar_red(id, nombre){
-  var id = id;
+	console.log('bandera de eliminación de red',banderaEliminarRed);
+  if(!banderaEliminarRed){
+	  var id = id;
   var nombre = nombre;
   myApp.prompt('Ingresa la contraseña de tu red: ',tituloalert,function (results){
     console.log(results);
@@ -250,6 +260,10 @@ function agregar_red(id, nombre){
       hiddenPreload();
     });
 });
+  }else{
+	  banderaEliminarRed= false;
+  }
+  
 }
 
 myApp.onPageInit('detalle_mascota', function(page){
