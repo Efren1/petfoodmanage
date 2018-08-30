@@ -57,6 +57,9 @@
             <!-- Login Screen -->
             <div class = "login-screen modal-in" style="background-color:#EEEEEE">
               <div class="content-block-login" id="content-login">
+				<div class="page_content"> 
+					<p style="position: initial;width:45%; padding: 0% 0% 0% 30%"><img src="images/pet_avatar.png" id="foto_horarioPet" class="profile-avatar" style="border-radius: 100px;"/></p>     
+				</div>
                 <h4 class="title-login">Iniciar Sesión</h4>
                  <div class="loginform">
                      <form id="form-login">
@@ -83,19 +86,19 @@
                     <form id="form-register">
                       <div class="form_row">
                         <div class="form_row_icon"><img src="images/icons/blue/user.png" alt="" title="" /></div>
-                        <input type="text" id="user" class="form_input required" placeholder="Nombre(s)" required/>
+                        <input type="text" id="user" maxlength="25" class="form_input required" placeholder="Nombre(s)" required/>
                       </div>
                       <div class="form_row">
                         <div class="form_row_icon"><img src="images/icons/blue/user.png" alt="" title="" /></div>
-                        <input type="text" id="apellidos-register" class="form_input required" placeholder="Apellidos" required/>
+                        <input type="text" id="apellidos-register" maxlength="30" class="form_input required" placeholder="Apellidos" required/>
                       </div>
                       <div class="form_row">
                         <div class="form_row_icon"><img src="images/icons/blue/contact.png" alt="" title="" /></div>
-                        <input type="email" id="email-register" value="" class="form_input required" placeholder="Email" required/>
+                        <input type="email" id="email-register"  maxlength="55" value="" class="form_input required" placeholder="Email" required/>
                       </div>
                       <div class="form_row">
                         <div class="form_row_icon"><img src="images/icons/blue/lock.png" alt="" title="" /></div>
-                        <input type="password" id="pass-register" value="" class="form_input required" placeholder="Password" required/>
+                        <input type="password" id="pass-register" maxlength="50" value="" class="form_input required" placeholder="Password" required/>
                       </div>
                       <div class="form_row">
                         <div class="form_row_icon"><img src="images/icons/blue/lock.png" alt="" title="" /></div>
@@ -115,7 +118,7 @@
                     <form id="form-forwardPass" method="post">
                       <div class="form_row">
                         <div class="form_row_icon"><img src="images/icons/blue/contact.png" alt="" title="" /></div>
-                        <input type="email" id="input-forwardPass" class="form_input required" placeholder="Email" required/>
+                        <input type="email" id="input-forwardPass" maxlength="55" class="form_input required" placeholder="Email" required/>
                       </div>
                       <input type="submit" name="submit" class="form_submit" value="Recuperar" />
                     </form>

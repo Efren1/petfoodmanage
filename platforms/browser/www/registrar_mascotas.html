@@ -25,7 +25,7 @@
           <form name="formulario_registro" id="form-registro">
             <div class="form_row">
               <div class="form_row_icon"><img src="images/icons/blue/pet.png" /></div>
-              <input type="text" id="input-nombre" class="form_input" placeholder="Nombre(s)" required/>
+              <input type="text" maxlength="50" id="input-nombre" class="form_input" placeholder="Nombre(s)" required/>
             </div>
             <div class="form_row">
               <div class="form_row_icon"><img src="images/icons/blue/blog.png" /></div>
@@ -49,7 +49,7 @@
               </div>
             </div>
 			<div class="form_row">
-              <div class="form_row_icon"><img src="images/icons/blue/cat.png" /></div>
+              <div class="form_row_icon"><img src="images/icons/blue/rule.png" /></div>
               <!-- <input type="text" id="input-tipo" class="form_input" placeholder="Tipo" required/> -->
               <div class="custom_select">
                 <a href="#" class="item-link smart-select" data-open-in="picker">
@@ -68,15 +68,15 @@
             </div>
             <div class="form_row">
               <div class="form_row_icon"><img src="images/icons/blue/pet.png" /></div>
-              <input type="text" id="input-raza" class="form_input" placeholder="Raza" required/>
+              <input type="text" maxlength="55" id="input-raza" class="form_input" placeholder="Raza" required/>
             </div>
             <div class="form_row">
               <div class="form_row_icon"><img src="images/icons/blue/file.png" /></div>
-              <input type="text" id="input-descripcion-mascota" class="form_input" placeholder="Descripción" required/>
+              <input type="text" maxlength="120" id="input-descripcion-mascota" class="form_input" placeholder="Descripción" required/>
             </div>
             <div class="form_row" style="width: 90%;">
               <div class="form_row_icon"><img src="images/icons/blue/dispenser.png" /></div>
-              <input type="text" id="input-id-dispositivo" class="form_input" placeholder="QR Dispensador"  required/>
+              <input type="text" id="input-id-dispositivo" class="form_input" placeholder="QR Dispensador"  readonly required />
               <button onclick="qrRegister()" class="form_row" style="width: 10%; height: 5%; position: absolute; background-color: white; border: none;"><img src="images/icons/blue/qr-code.png" style="width: 85%; padding: 3px;" /></button>
             </div>
 			<input type="submit" name="submit" class="form_submit" id="submit" value="Registrar" />

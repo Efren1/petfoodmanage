@@ -209,7 +209,7 @@ myApp.onPageInit('redes_wifi', function (page) {
                 '        </div>' +
                 '      <div class = "item-subtitle">' + ((item.estado == "A") ? "Guardada" : "") + '</div>' +
                 '    </div>' +
-				'    <img onclick="alertaRed(' + item.id + ',' + "'" + item.nombre + "'" + ')"src = "images/icons/red/delete_1.png" width = "25" height = "25" style="padding: 3%">' +
+				'    <img onclick="alertaEliminarRed(' + item.id + ',' + "'" + item.nombre + "'" + ')"src = "images/icons/red/delete_1.png" width = "25" height = "25" style="padding: 3%">' +
                 '  </a>' +
 				'</li>';
       });
@@ -223,9 +223,32 @@ myApp.onPageInit('redes_wifi', function (page) {
     });
 })
 
-function alertaRed(id,nombre){
+function alertaEliminarRed(id,nombre){
 	banderaEliminarRed = true;
-	myApp.alert('Esta seguro de eliminar esta.','',tituloalert,'Aceptar');
+	myApp.confirm('<br><div>¿Está seguro que desea eliminar la red?. Deberá configurar de nuevo la red por default.</div><br>','Eliminar Red',function(){
+		showPreload();
+		fetch(apiUrl+'/mascota/v01/' + idMascota + '/red/eliminar', {
+		method:'POST',
+		body:JSON.stringify({
+		  
+		}),
+		headers:{
+		  'Accept': 'application/json, text/plain',
+		  'Content-Type':'application/json',
+		  'access-token' : token
+		}
+		 }).then(function(response) {
+		  return response.json();
+		 }).then(function(data) {
+		console.log(data);
+		hiddenPreload();
+		mainView.loadPage({url: 'mascotas.html', ignoreCache:false, reload:false });
+		 }).catch(function(error){
+		myApp.alert('Ha ocurrido un error, por favor inténtalo de nuevo!!!');
+		hiddenPreload();
+		 });
+	})
+	
 	
 }
 function agregar_red(id, nombre){
