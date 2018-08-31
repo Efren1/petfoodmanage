@@ -301,11 +301,49 @@ myApp.onPageInit('detalle_mascota', function(page){
 })
 
 function comida_ya(id){
-  myApp.alert('<br><div>Activar Mecanismo Trofí</div><br>' +
+	
+	fetch(apiUrl+'/mascota/v01/'+id+'/estado/alimento', {
+		  method:'GET',
+		  headers:{
+			  'access-token' : token
+		  }
+	  }).then(function(response) {
+		  return response.json();
+	  }).then(function(data){
+		  
+		  console.log('Información de respuesta ',data);
+		  if(data.estadoAlimento =='F'){
+			myApp.alert('<br><div>Activar Mecanismo Trofí</div><br>' +
+			  '<div>'+
+			  '<img src="images/icons/blue/dispenser_full.png" width="30"/>'+
+			  '</div>'+
               '<label class="label-switch">' +
               '  <input type="checkbox" id="dispensar" >' +
               '  <div class="checkbox"></div>' +
-              '<label>',function (){dispensar(id)} );
+              '<label>',function (){dispensar(id)} );  
+		  }else if(data.estadoAlimento =='M'){
+			myApp.alert('<br><div>Activar Mecanismo Trofí</div><br>' +
+              '<div>'+
+			  '<img src="images/icons/blue/dispenser_medium.png" width="30"/>'+
+			  '</div>'+
+			  '<label class="label-switch">' +
+              '  <input type="checkbox" id="dispensar" >' +
+              '  <div class="checkbox"></div>' +
+              '<label>',function (){dispensar(id)} );    
+		  }else if(data.estadoAlimento =='E'){
+			  myApp.alert('<br>'+
+			  '<div>'+
+			  '<img src="images/icons/blue/dispenser_empty.png" width="100"/>'+
+			  '<br/>Vacío'+
+			  '</div>'+
+			  '<br>'+
+			  '<div>No se puede activar mecanismo</div>'+
+			  '<br>');  
+		  }
+		  
+	  }).catch(function(error){
+		  console.log('Se presento un error consultando el estado del alimento',error);
+	  });
 }
 
 function dispensar(id){
@@ -451,7 +489,7 @@ $('.user_avatar').click(
 $$('#form-login').on('submit', function (e) {
     e.preventDefault();
   showPreload();
-  if($$('#email').val() == '' && $$('#pass').val() == ''){
+  if($$('#email').val() == '' || $$('#pass').val() == ''){
 	  myApp.alert('Por favor diligencie los campos.');
 	  hiddenPreload();
   }else{
